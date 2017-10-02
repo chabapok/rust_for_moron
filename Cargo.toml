@@ -1,0 +1,6 @@
+[package]
+name = "rust_for_moron"
+version = "0.1.0"
+authors = ["Alexander <chabapok@gmail.com>"]
+
+[dependencies]
