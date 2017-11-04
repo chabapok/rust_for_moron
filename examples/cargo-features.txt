@@ -1,0 +1,26 @@
+В Cargo.toml проекта обьявляем фичи, которые проект может поддерживать:
+
+```
+[featureas]
+default = ["default_feature1", "default_feature2"]
+default_feature1 = []
+default_feature2 = []
+default_feature3 = ["other_create"]
+```
+
+
+Эта запись означает, что крейт имеет фичи default_feature1, default_feature2, default_feature3, из которых
+первые две собираются собираются по умолчанию, а третья требует для сборки крейт other_create
+
+
+В Cargo.toml верхнего уровня обьявляем, какие фичи нужны
+
+```
+[[bin]]
+default-features = false
+required-features = ["other_create", "default_feature2"]
+```
+
+
+
+
