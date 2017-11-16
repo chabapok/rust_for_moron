@@ -38,4 +38,5 @@ impl StructA{
 
 
 fn main(){
+
 }
